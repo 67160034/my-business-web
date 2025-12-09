@@ -1,69 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>Figure Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure World - หน้าแรก</title>
+
     <style>
-        body { font-family: Arial; margin: 0; background: #f7f7f7; }
-        header, footer {
-            background: #1e1e1e;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #fce3ff, #d0e7ff);
+        }
+
+        /* HEADER */
+        header {
+            background: #2c3e50;
             color: white;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .logo {
+            width: 120px;
+            height: auto;
+            border-radius: 10px;
+            background: white;
+            padding: 5px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 35px;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #34495e;
             text-align: center;
-            padding: 15px;
+            padding: 10px 0;
         }
         nav a {
             color: white;
+            padding: 12px 20px;
             text-decoration: none;
-            margin: 0 12px;
-            font-size: 14px;
+            font-size: 18px;
         }
+        nav a:hover {
+            background: #1abc9c;
+            border-radius: 5px;
+        }
+
+        /* HERO */
         .hero {
-            background: #ececec;
-            padding: 50px 20px;
+            background: linear-gradient(135deg, #ffbad5, #ffd6a5);
             text-align: center;
-            border-bottom: 1px solid #ccc;
+            padding: 60px 20px;
+            color: #2c3e50;
         }
+        .hero h1 {
+            font-size: 45px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 20px;
+        }
+
+        /* SERVICES */
         .services {
-            padding: 20px;
-            width: 90%;
-            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
         }
         .service-box {
             background: white;
+            padding: 20px;
+            width: 28%;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 10px #bbb;
+            transition: 0.3s;
+        }
+        .service-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #888;
+        }
+        .service-box h3 {
+            margin-top: 0;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
             padding: 15px;
-            border: 1px solid #dcdcdc;
-            margin-bottom: 10px;
-            border-radius: 5px;
+            margin-top: 40px;
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Figure Store</h1>
-    <nav>
-        <a href="index.html">หน้าแรก</a>
-        <a href="about.html">เกี่ยวกับ</a>
-        <a href="services.html">บริการ</a>
-        <a href="contact.html">ติดต่อ</a>
-    </nav>
+    <img src="images/4.png" alt="โลโก้ร้าน" class="logo">
+    <h1>NEO CREO</h1>
 </header>
 
-<div class="hero">
-    <h2>Welcome to Figure Store</h2>
-    <p>ร้านฟิกเกอร์สำหรับนักสะสมตัวจริง</p>
-</div>
+<nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="about.html">เกี่ยวกับ</a>
+    <a href="services.html">บริการ</a>
+    <a href="contact.html">ติดต่อ</a>
+</nav>
 
-<div class="services">
-    <h2>บริการของเรา</h2>
+<section class="hero">
+    <h1>ยินดีต้อนรับสู่ร้านฟิกเกอร์ของเรา!</h1>
+    <p>ฟิกเกอร์คุณภาพสูง ราคาดี ส่งไว มั่นใจได้</p>
+</section>
 
-    <div class="service-box">ขายฟิกเกอร์</div>
-    <div class="service-box">รับสั่งนำเข้า</div>
-    <div class="service-box">ประเมินราคา</div>
-</div>
+<section class="services">
+
+    <div class="service-box">
+        <h3>จำหน่ายฟิกเกอร์</h3>
+        <p>ของแท้ จากค่ายดังทั่วโลก</p>
+    </div>
+
+    <div class="service-box">
+        <h3>รับพรีออเดอร์</h3>
+        <p>เปิดจองสินค้าที่กำลังจะออก</p>
+    </div>
+
+    <div class="service-box">
+        <h3>รับประเมินราคา</h3>
+        <p>ตีราคาฟิกเกอร์สะสมของคุณ</p>
+    </div>
+
+</section>
 
 <footer>
-    © 2025 Figure Store
+    © 2025 Figure World
 </footer>
 
 </body>
