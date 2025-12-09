@@ -2,40 +2,65 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>เกี่ยวกับเรา - Figure Store</title>
+    <title>About Us - Figure World</title>
+
     <style>
-        body { font-family: Arial; margin: 0; padding: 20px; }
-        figure { width: 200px; text-align: center; display: inline-block; margin: 20px; }
-        img { width: 100%; border-radius: 8px; }
+        body { background: #ecf0f1; font-family: Arial; margin: 0; }
+        header { background: #3498db; padding: 20px; color: white; text-align: center; }
+        .content { padding: 30px; }
+
+        /* การ์ดทีมงาน */
+        figure {
+            width: 200px;
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #ccc;
+            text-align: center;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        figure img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        a { color: #e67e22; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <!-- 2.1 เรื่องราวของบริษัท -->
-    <h1>เกี่ยวกับบริษัท</h1>
-    <p>Figure Store ก่อตั้งขึ้นในปี 2018 เพื่อให้บริการแฟนคลับการ์ตูนและเกมส์ในการสะสมฟิกเกอร์คุณภาพสูง</p>
+<header>
+    <h1>เกี่ยวกับเรา</h1>
+</header>
 
-    <!-- 2.2 ทีม -->
+<div class="content">
+    <h2>เรื่องราวของบริษัท</h2>
+    <p>เราเริ่มต้นจากการเป็นนักสะสมฟิกเกอร์เล็กๆ ก่อนจะเติบโตเป็นร้านฟิกเกอร์ที่มีชื่อเสียงในไทย</p>
+
     <h2>ทีมงานของเรา</h2>
+
     <figure>
-        <img src="images/team-member-1.jpg" alt="Team 1">
-        <figcaption>คุณสมชาย – CEO</figcaption>
+        <img src="images/1.jpg" alt="คุณเชียร์">
+        <figcaption>คุณ A - Founder</figcaption>
     </figure>
 
     <figure>
-        <img src="images/team-member-2.jpg" alt="Team 2">
-        <figcaption>คุณมินตรา – Designer</figcaption>
+        <img src="images/2.jpg" alt="คุณโคนัน">
+        <figcaption>คุณ B - Manager</figcaption>
     </figure>
 
-    <!-- 2.3 Mission / Vision -->
-    <h2>วิสัยทัศน์และพันธกิจ</h2>
-    <h3>Vision</h3>
-    <p>เป็นผู้นำตลาดฟิกเกอร์อันดับหนึ่งในเอเชีย</p>
-    <h3>Mission</h3>
-    <p>คัดสรรสินค้าที่ดีที่สุดเพื่อให้ลูกค้าได้รับประสบการณ์การสะสมที่ดีที่สุด</p>
+    <figure>
+        <img src="images/3.jpg" alt="คุณอาเรีย">
+        <figcaption>คุณ C - Support</figcaption>
+    </figure>
 
-    <!-- 2.4 ลิงก์กลับหน้าแรก -->
-    <p><a href="index.html">← กลับหน้าแรก</a></p>
+    <h2>Mission / Vision</h2>
+    <p>มุ่งมั่นเป็นร้านฟิกเกอร์อันดับ 1 ของเอเชีย</p>
+
+    <p><a href="index.html">กลับหน้าแรก</a></p>
+</div>
 
 </body>
 </html>
