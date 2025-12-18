@@ -3,64 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>About Us - Figure World</title>
-
-    <style>
-        body { background: #ecf0f1; font-family: Arial; margin: 0; }
-        header { background: #3498db; padding: 20px; color: white; text-align: center; }
-        .content { padding: 30px; }
-
-        /* การ์ดทีมงาน */
-        figure {
-            width: 200px;
-            background: white;
-            padding: 15px;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px #ccc;
-            text-align: center;
-            margin: 20px;
-            display: inline-block;
-        }
-
-        figure img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        a { color: #e67e22; font-weight: bold; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<header>
-    <h1>เกี่ยวกับเรา</h1>
+<!-- HEADER -->
+<header id="header">
+    <div class="container nav">
+        <h3>Figure World</h3>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 </header>
 
-<div class="content">
-    <h2>เรื่องราวของบริษัท</h2>
-    <p>เราเริ่มต้นจากการเป็นนักสะสมฟิกเกอร์เล็กๆ ก่อนจะเติบโตเป็นร้านฟิกเกอร์ที่มีชื่อเสียงในไทย</p>
+<!-- ABOUT SECTION -->
+<section class="section">
+    <div class="container">
+        <h2>เรื่องราวของบริษัท</h2>
+        <p>
+            เราเริ่มต้นจากการเป็นนักสะสมฟิกเกอร์เล็ก ๆ
+            ก่อนจะเติบโตเป็นร้านฟิกเกอร์ที่มีชื่อเสียงในประเทศไทย
+        </p>
+    </div>
+</section>
 
-    <h2>ทีมงานของเรา</h2>
+<!-- TEAM SECTION -->
+<section class="section">
+    <div class="container">
+        <h2>ทีมงานของเรา</h2>
 
-    <figure>
-        <img src="images/1.jpg" alt="คุณเชียร์">
-        <figcaption>คุณ A - Founder</figcaption>
-    </figure>
+        <div class="team">
+            <div class="card team-member">
+                <img src="images/1.jpg" alt="คุณ เชียร์ ">
+                <h3>คุณ A</h3>
+                <p>Founder</p>
+            </div>
 
-    <figure>
-        <img src="images/2.jpg" alt="คุณโคนัน">
-        <figcaption>คุณ B - Manager</figcaption>
-    </figure>
+            <div class="card team-member">
+                <img src="images/2.jpg" alt="คุณ โคนัน">
+                <h3>คุณ B</h3>
+                <p>Manager</p>
+            </div>
 
-    <figure>
-        <img src="images/3.jpg" alt="คุณอาเรีย">
-        <figcaption>คุณ C - Support</figcaption>
-    </figure>
+            <div class="card team-member">
+                <img src="images/3.jpg" alt="คุณ อาเรีย">
+                <h3>คุณ C</h3>
+                <p>Support</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <h2>Mission / Vision</h2>
-    <p>มุ่งมั่นเป็นร้านฟิกเกอร์อันดับ 1 ของเอเชีย</p>
+<!-- MISSION -->
+<section class="section">
+    <div class="container">
+        <h2>Mission / Vision</h2>
+        <p>
+            มุ่งมั่นเป็นร้านฟิกเกอร์อันดับ 1 ของเอเชีย
+            และส่งมอบสินค้าที่มีคุณภาพให้ลูกค้าทุกคน
+        </p>
 
-    <p><a href="index.html">กลับหน้าแรก</a></p>
-</div>
+        <a href="index.html" class="btn">กลับหน้าแรก</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+    <p>© 2025 Figure World. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
