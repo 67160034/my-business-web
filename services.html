@@ -3,78 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <title>Services - Figure World</title>
-
-    <style>
-        body { background: #dfe6e9; margin: 0; font-family: Arial; }
-        header { background: #2c3e50; padding: 20px; color: white; text-align: center; }
-        section { background: white; margin: 20px; padding: 20px; border-radius: 10px; }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        table, th, td {
-            border: 2px solid #3498db;
-        }
-        th {
-            background: #74b9ff;
-            padding: 10px;
-        }
-        td {
-            padding: 10px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<header>
-    <h1>บริการของเรา</h1>
+<!-- HEADER -->
+<header id="header">
+    <div class="container nav">
+        <h3>Figure World</h3>
+        <ul class="nav-menu">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="about.html">เกี่ยวกับ</a></li>
+            <li><a href="services.html">บริการ</a></li>
+            <li><a href="contact.html">ติดต่อ</a></li>
+        </ul>
+    </div>
 </header>
 
-<section>
-    <h2>บริการหลัก</h2>
-
-    <section>
-        <h3>1. จำหน่ายฟิกเกอร์</h3>
-        <p>ของแท้ 100%</p>
-    </section>
-
-    <section>
-        <h3>2. พรีออเดอร์</h3>
-        <p>สั่งจองฟิกเกอร์ใหม่ก่อนใคร</p>
-    </section>
-
-    <section>
-        <h3>3. รับประเมินราคา</h3>
-        <p>ให้ราคาสูงสำหรับของสะสม</p>
-    </section>
-
-    <h2>ตารางเปรียบเทียบแพ็กเกจ</h2>
-
-    <table>
-        <tr>
-            <th>แพ็กเกจ</th>
-            <th>ราคา</th>
-            <th>รายละเอียด</th>
-        </tr>
-        <tr>
-            <td>Basic</td>
-            <td>Free</td>
-            <td>สอบถามทั่วไป</td>
-        </tr>
-        <tr>
-            <td>Premium</td>
-            <td>299฿</td>
-            <td>ประเมินราคาแบบละเอียด</td>
-        </tr>
-        <tr>
-            <td>VIP</td>
-            <td>599฿</td>
-            <td>ประเมิน + ให้คำปรึกษาเฉพาะทาง</td>
-        </tr>
-    </table>
-
+<!-- SERVICES INTRO -->
+<section class="section">
+    <div class="container">
+        <h2>บริการของเรา</h2>
+        <p>เรามีบริการที่ครอบคลุมสำหรับนักสะสมฟิกเกอร์ทุกระดับ</p>
+    </div>
 </section>
+
+<!-- SERVICES CARDS -->
+<section class="section">
+    <div class="container">
+        <div class="services">
+            <div class="card service-card">
+                <h3>จำหน่ายฟิกเกอร์</h3>
+                <p>ฟิกเกอร์แท้ 100% จากค่ายดังทั่วโลก</p>
+            </div>
+
+            <div class="card service-card">
+                <h3>พรีออเดอร์</h3>
+                <p>เปิดจองฟิกเกอร์ใหม่ก่อนใคร</p>
+            </div>
+
+            <div class="card service-card">
+                <h3>รับประเมินราคา</h3>
+                <p>ประเมินราคาฟิกเกอร์สะสมอย่างยุติธรรม</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PACKAGE TABLE -->
+<section class="section">
+    <div class="container">
+        <h2>ตารางเปรียบเทียบแพ็กเกจ</h2>
+
+        <div class="card">
+            <table style="width:100%; border-collapse: collapse;">
+                <tr>
+                    <th style="border:1px solid #100000; padding:10px;">แพ็กเกจ</th>
+                    <th style="border:1px solid #000000; padding:10px;">ราคา</th>
+                    <th style="border:1px solid #000000; padding:10px;">รายละเอียด</th>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #ff1100; padding:10px;">Basic</td>
+                    <td style="border:1px solid #fd0606; padding:10px;">Free</td>
+                    <td style="border:1px solid #ff0000; padding:10px;">สอบถามทั่วไป</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #00fd54; padding:10px;">Premium</td>
+                    <td style="border:1px solid #41e958; padding:10px;">299฿</td>
+                    <td style="border:1px solid #0be072; padding:10px;">ประเมินราคาแบบละเอียด</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #5011ffc0; padding:10px;">VIP</td>
+                    <td style="border:1px solid #625aff; padding:10px;">599฿</td>
+                    <td style="border:1px solid #5219e2; padding:10px;">ประเมิน + ให้คำปรึกษาเฉพาะทาง</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+    <p>© 2025 Figure World. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
